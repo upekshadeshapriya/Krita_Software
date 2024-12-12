@@ -1,0 +1,20 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 6 -start_number 0 -start_number_range 1 -i C:/animation krita/frame%04d.png -c:v libopenh264 -b:v 5000k C:/animation krita/krita assignment slow.mp4
+=====================================================
+Input #0, image2, from 'C:/animation krita/frame%04d.png':
+  Duration: 00:00:13.64, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 1200x720 [SAR 11811:11811 DAR 5:3], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+Press [q] to stop, [?] for help
+[libopenh264 @ 00000163b1a2fa80] Slice count will be set automatically
+[libopenh264 @ 00000163b1a2fa80] [OpenH264] this = 0x00000163B27606F0, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, mp4, to 'C:/animation krita/krita assignment slow.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1200x720 [SAR 1:1 DAR 5:3], q=2-31, 5000 kb/s, 6 fps, 12288 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 libopenh264
+    Side data:
+      cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=4740.7kbits/s speed=0.00558x    frame=   57 fps=0.0 q=-0.0 size=       0kB time=00:00:09.33 bitrate=   0.0kbits/s speed=  18x    frame=  135 fps=131 q=-0.0 size=     512kB time=00:00:22.33 bitrate= 187.8kbits/s speed=21.6x    frame=  152 fps= 94 q=-0.0 size=     512kB time=00:00:25.16 bitrate= 166.7kbits/s speed=15.6x    frame=  162 fps= 73 q=-0.0 size=     512kB time=00:00:26.83 bitrate= 156.3kbits/s speed=12.1x    frame=  238 fps= 87 q=-0.0 size=    1024kB time=00:00:39.50 bitrate= 212.4kbits/s speed=14.5x    frame=  309 fps= 96 q=-0.0 size=    1280kB time=00:00:51.33 bitrate= 204.3kbits/s speed=15.9x    frame=  341 fps= 99 q=-0.0 Lsize=    1425kB time=00:00:56.66 bitrate= 206.0kbits/s speed=16.5x    
+video:1423kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.152935%
